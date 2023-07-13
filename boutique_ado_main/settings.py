@@ -47,8 +47,11 @@ INSTALLED_APPS = [
     # Home app
     'home',
 
-    #Products app
+    # Products app
     'products',
+
+    # Bag app
+    'bag',
 ]
 
 MIDDLEWARE = [

@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['boutique-ado-ecommerce-store-a84f62bdd2b1.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['boutique-ado-ecommerce-store-a84f62bdd2b1.herokuapp.com', 'localhost', '8000-johawill-boutiqueadoeco-ffw1crf09to.ws-eu102.gitpod.io']
 
 
 # Application definition
@@ -88,8 +88,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join( BASE_DIR, 'templates'),
-            os.path.join( BASE_DIR, 'templates', 'allauth'),
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates', 'allauth'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -147,10 +147,6 @@ else:
             'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
-
-#DATABASES = {
-#    'default': dj_database_url.parse('your-database-url-here')
-# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
